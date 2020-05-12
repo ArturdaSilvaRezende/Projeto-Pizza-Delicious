@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Pizzaria Delicious</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="Pizza Delicious, cardápio diferenciaod, melhores preços">
-    <meta name="description" content="Pizza Delicious é o seu modelo de site número um de pizza grátis que oferece um design espetacular, saboroso, refinado e notável.">
+    <meta name="description"
+        content="Pizza Delicious é o seu modelo de site número um de pizza grátis que oferece um design espetacular, saboroso, refinado e notável.">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Artur">
 
@@ -25,18 +27,47 @@
     <!-- google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
 
-     <!-- html5shiv // respond -->
+    <!-- html5shiv // respond -->
     <!--[if lt IE 9]>
         <script src="node_modules/html5shiv-master/dist/html5shiv.js"></script>
         <script src="node_modules/html5shiv-master/dist/html5shiv-printshiv.js"></script>
         <script src="js/respond.js"></script>
     <![endif]-->
 </head>
+
 <body>
-    
-    
-    <script src="node_modules/jquery/dist/jquery.js"></script><!-- jquery -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script><!-- bootstrap.js -->
-    <script src="node_modules/popper.js/dist/umd/popper.js"></script><!-- popper.js -->
+
+    <header class="header">
+
+        <div class="container navbar navbar-expand-lg">
+
+            <a href="index.html" class="logotipo navbar-brand">
+                <img src="img/logo.PNG" alt="logo-pizza-delicious">
+            </a><!-- logo-pizza-delicious -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-light"></i>
+                <span class="text-light">Cardápio</span>
+            </button><!-- btn toggle -->
+
+            <nav class="collapse navbar-collapse justify-content-end" id="navbar-main">
+                <ul class="mt-4 d-flex justify-content-around flex-wrap">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="cardapio.html" class="nav-link">Cardápio</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav><!-- menu principal -->
+
+        </div><!-- header content -->
+
+    </header>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script><!-- jquery -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script><!-- bootstrap.js -->
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script><!-- popper.js -->
 </body>
+
 </html>
