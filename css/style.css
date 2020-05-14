@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    font-size: 100%;
 }
 
 li {
@@ -15,6 +16,14 @@ li {
 
 .active {
     color: #fac564 !important;
+}
+
+.bg-active {
+    background-color: #fac564 !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
 }
 
 /* =========== header =========== */
@@ -37,4 +46,12 @@ li {
     color: #fac564;
     transition: 0.5s;
 }
+
+.carousel-inner img {
+    width: 100%;
+}
+
+
+
+
 

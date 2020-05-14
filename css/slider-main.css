@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* =========== área do carousel =========== */
+
+#sliderContainer {
+    position: relative;
+}
+
+.carousel-item img {
+    height: 500px;
+}
+
+/* ========= slider 01 ========= */
+
+.carousel-item .box-carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.carousel-item .box-carousel h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5em;
+}
+
+.carousel-item .box-carousel h2,p {
+    color: #fff;
+}
+
+.carousel-item .box-carousel p {
+    margin-top: 20px;
+}
+
+.carousel-item .box-carousel button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-item .box-carousel .encomendar {
+    background-color: #fac564;
+    color: #000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.carousel-item .box-carousel .encomendar:hover {
+    border: 1px solid #fac564;
+    color: #fff;
+    background-color: transparent;
+}
+
+.carousel-item .box-carousel .cardapio {
+    border: 1px solid #fac564;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.carousel-item .box-carousel .cardapio:hover {
+    background-color: #fac564;
+    color: #000;
+}
+
+/* ========= slider 02 ========= */
+
+.carousel-propaganda-02 .box-carousel {
+    left: 30%;
+}
+
+.carousel-propaganda-02 .slider-produto {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.carousel-propaganda-02 .slider-produto img {
+    width: 40%;
+    height: 20%;
+}
+
+.carousel-propaganda-02 .box-carousel .title-slide-03 {
+    font-size: 2.5em;
+}
+
+/* ======= carousel img background ======= */
+
+@media screen and (min-width: 701px) and (max-width: 992px){
+    .carousel-item img {
+        height: 500px;
+    }    
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px){
+    .carousel-item img {
+        height: 400px;
+    }    
+}
+
+/* ======= carousel content ======= */
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .carousel-propaganda-02 .box-carousel {
+        left: 24%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 992px) {
+
+    /* propaganda 01 */
+    .carousel-propaganda-01 .box-carousel {
+        width: 55%;
+    }
+
+    .carousel-propaganda-01 .box-carousel h2 {
+        font-size: 1.6em;
+    }
+
+     /* propaganda 02 */
+    .carousel-propaganda-02 .box-carousel {
+        left: 30%;
+        width: 50%;
+    }
+
+    .carousel-propaganda-02 .box-carousel h3 {
+        font-size: 2em;
+    }
+
+    .carousel-propaganda-02 .box-carousel h2 {
+        font-size: 1.4em;
+    }
+
+    .carousel-propaganda-02 .slider-produto {
+        right: -20%;
+    }
+
+    .carousel-propaganda-02 .slider-produto img {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 699px) {
+
+    /* propaganda 01 */
+    .carousel-propaganda-01 .box-carousel {
+        width: 70%;
+    }
+
+    .carousel-propaganda-01 .box-carousel h2 {
+        font-size: 1.6em;
+    }
+
+    .carousel-propaganda-01 .box-carousel h3 {
+        font-size: 2.6em;
+    }
+
+    /* propaganda 02 */
+    .carousel-propaganda-02 .box-carousel {
+        left: 34%;
+        width: 60%;
+    }
+
+    .carousel-propaganda-02 .box-carousel h3 {
+        font-size: 1.9em;
+    }
+
+    .carousel-propaganda-02 .box-carousel h2 {
+        font-size: 1.1em;
+    }
+
+    .carousel-propaganda-02 .box-carousel p {
+        font-size: 12px;
+    }
+
+    .carousel-propaganda-02 .slider-produto {
+        right: -30%;
+    }
+
+    .carousel-propaganda-02 .slider-produto img {
+        width: 25%;
+    }
+
+    .carousel-propaganda-02 .box-carousel button {
+        font-size: 12px;
+    }
+
+    /* propaganda 03 */
+    .carousel-propaganda-02 .box-carousel .title-slide-03 {
+        font-size: 1.6em;
+    }
+
+}

@@ -17,6 +17,7 @@
 
     <!-- estilo cusmoizado -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider-main.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
@@ -26,6 +27,7 @@
 
     <!-- google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 
     <!-- html5shiv // respond -->
     <!--[if lt IE 9]>
@@ -45,7 +47,8 @@
                 <img src="img/logo.PNG" alt="logo-pizza-delicious">
             </a><!-- logo-pizza-delicious -->
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars text-light"></i>
                 <span class="text-light">Cardápio</span>
             </button><!-- btn toggle -->
@@ -63,7 +66,93 @@
 
         </div><!-- header content -->
 
-    </header>
+    </header><!-- header -->
+
+    <section id="sliderContainer" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#sliderContainer" data-slide-to="0" class="active rounded-pill p-2 bg-active"></li>
+            <li data-target="#sliderContainer" data-slide-to="1" class="rounded-pill p-2 bg-active"></li>
+            <li data-target="#sliderContainer" data-slide-to="2" class="rounded-pill p-2 bg-active"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active carousel-propaganda-01">
+                <img class="d-block w-100" src="img/bg_3.jpg" alt="First slide">
+
+                <div class="box-carousel">
+
+                    <hgroup>
+                        <h3>Bem-vindo</h3>
+                        <h2>As melhores e mais variadas receitas da região</h2>
+                    </hgroup>
+                   
+                    <p>Preparamos sua pizza favorita com todo amor e carinho do mundo</p>
+
+                    <div class="mb-3">
+                        <button class="encomendar mr-4">Encomendar Agora</button>
+                        <button class="cardapio">Ver Cardápio</button>
+                    </div>
+
+                </div>
+                
+            </div><!-- silde 01 -->
+
+            <div class="carousel-item carousel-propaganda-02">
+                <img class="d-block w-100" src="img/bg_1.jpg" alt="Second slide">
+
+                <div class="box-carousel">
+
+                    <hgroup>
+                        <h3>Massa bem crocante</h3>
+                        <h2>Pizza Italiana - Cardápio</h2>
+                    </hgroup>
+                   
+                    <p>molho de tomate, peito de peru defumado coberto com "Catupiry", orégano e azeitonas pretas.</p>
+
+                    <div class="pb-3">
+                        <button class="encomendar mr-4">Encomendar Agora</button>
+                        <button class="cardapio">Ver Cardápio</button>
+                    </div>
+
+                </div>
+
+                <div class="slider-produto">
+                    <img src="img/bg_2.png" alt="Pizza Italyana">
+                </div>
+
+            </div><!-- slide 2-->
+
+            <div class="carousel-item carousel-propaganda-02">
+                <img class="d-block" src="img/bg_1.jpg"  alt="Third slide">
+
+                <div class="box-carousel">
+
+                    <hgroup>
+                        <h3 class="title-slide-03">Ingredientes Selecionados e Naturais</h3>
+                        <h2>Pizza Portuguesa - Cardápio</h2>
+                    </hgroup>
+                   
+                    <p>molho de tomate, presunto gordo, cebola, ovos cozidos, coberta com muzzarela especial, orégano e azeitonas pretas.</p>
+
+                    <div class="pb-3">
+                        <button class="encomendar mr-4">Encomendar Agora</button>
+                        <button class="cardapio">Ver Cardápio</button>
+                    </div>
+
+                </div>
+
+                <div class="slider-produto">
+                    <img src="img/bg_1.png" alt="Pizza Italyana">
+                </div>
+
+            </div><!-- silde 3 -->
+
+        </div>
+
+      
+    </section><!-- slideshow -->
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script><!-- jquery -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script><!-- bootstrap.js -->
