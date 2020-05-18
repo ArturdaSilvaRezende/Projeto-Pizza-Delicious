@@ -14,6 +14,22 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url('../img/bg_4.jpg') 100% 100% no-repeat;
+    background-attachment: fixed;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+/* =========== classses globais  =========== */
+
 .active {
     color: #fac564 !important;
 }
@@ -64,7 +80,7 @@ li {
 /* ====== endereço ====== */
 
 .endereco {
-    background-color: #212529;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 766px){
@@ -72,7 +88,7 @@ li {
     .endereco .row .redes-sociais {
         background-color: #fac564;
         width: 100%;
-        padding-left: 20px;
+        padding: 10px 0 10px 20px;
     }
 
     .endereco .row .redes-sociai p, .fa-share {
@@ -86,6 +102,121 @@ li {
         color: #000;
     }
 
+}
+
+/* ====== about resumo ====== */
+
+.about-index {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.about-index .about-index-hall img {
+    width: 100%;
+}
+
+.about-index .about-index-content {
+    width: 50%;
+    padding: 30px;
+    display: block;
+}
+
+.about-index .about-index-content h2 {
+    color: #fff;
+}
+
+.about-index .about-index-content p {
+    text-align: justify;
+    font-size: 1.2em;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+
+@keyframes abound_index_ {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-index .about-index-content {
+        display: none;
+        animation: abound_index_ 2s;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px){
+
+    .about-index .about-index-hall img {
+      width: 100%;
+    }
+
+    .about-index .bg-abount-index {
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 900;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    .about-index .about-index-content {
+        position: absolute;
+        z-index: 902;
+        top: 25%;
+        right: 0;
+        width: 100%;
+    }
+
+    .about-index .about-index-content p,h2 {
+        color: #fff;
+        width: 100%;
+        font-size: 16pt;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+
+    .about-index {
+        overflow-y: hidden;
+    }
+
+    .about-index .about-index-content {
+        position: absolute;
+        z-index: 902;
+        top: 4%;
+        right: 0;
+        width: 100%;
+    }
+
+    .about-index .bg-abount-index {
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 900;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+       
+    }
+
+    .about-index-content p,h2  {
+        color: #fff;
+        font-size: 16pt;
+    }
+
+    .about-index .about-index-content .abount-pizza-delicious {
+        font-size: 13pt;
+    }
 }
 
 

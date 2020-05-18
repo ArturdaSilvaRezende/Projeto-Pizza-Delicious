@@ -30,7 +30,13 @@
 
 .carousel-item .box-carousel h3 {
     font-family: 'Great Vibes', cursive;
-    font-size: 4.5em;
+    font-size: 4em;
+}
+
+.carousel-item .box-carousel h2 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16pt;
 }
 
 .carousel-item .box-carousel h2,p {
@@ -120,6 +126,7 @@
     .carousel-propaganda-02 .box-carousel {
         left: 24%;
     }
+
 }
 
 @media screen and (min-width: 700px) and (max-width: 992px) {
@@ -131,6 +138,8 @@
 
     .carousel-propaganda-01 .box-carousel h2 {
         font-size: 1.6em;
+        width: 80%;
+        margin: 0 auto;
     }
 
      /* propaganda 02 */
@@ -145,6 +154,8 @@
 
     .carousel-propaganda-02 .box-carousel h2 {
         font-size: 1.4em;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .carousel-propaganda-02 .slider-produto {
@@ -161,11 +172,13 @@
 
     /* propaganda 01 */
     .carousel-propaganda-01 .box-carousel {
-        width: 70%;
+        width: 100%;
     }
 
     .carousel-propaganda-01 .box-carousel h2 {
         font-size: 1.6em;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .carousel-propaganda-01 .box-carousel h3 {
@@ -184,6 +197,8 @@
 
     .carousel-propaganda-02 .box-carousel h2 {
         font-size: 1.1em;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .carousel-propaganda-02 .box-carousel p {
