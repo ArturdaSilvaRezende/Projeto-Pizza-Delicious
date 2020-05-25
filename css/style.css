@@ -54,6 +54,9 @@ html, body {
 
 .header {
     background-color: #212529;
+    position: fixed;
+    width: 100%;
+    z-index: 900;
 }
 
 .header .logotipo img {
@@ -119,7 +122,6 @@ html, body {
 .about-index .about-index-content {
     width: 50%;
     padding: 30px;
-    display: block;
 }
 
 .about-index .about-index-content h2 {
@@ -132,7 +134,7 @@ html, body {
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
 }
 
-
+/* about index content animation */
 @keyframes abound_index_ {
 
     0% {
@@ -149,6 +151,10 @@ html, body {
     .about-index .about-index-content {
         display: none;
         animation: abound_index_ 2s;
+        -webkit-animation: abound_index_ 2s;
+        -moz-animation: abound_index_ 2s;
+        -ms-animation: abound_index_ 2s;
+        -o-animation: abound_index_ 2s;
     }
 }
 
@@ -161,7 +167,7 @@ html, body {
     .about-index .bg-abount-index {
         width: 100%;
         background-color: rgba(0,0,0,0.7);
-        z-index: 900;
+        z-index: 99;
         position: absolute;
         left: 0;
         top: 0;
@@ -170,7 +176,7 @@ html, body {
 
     .about-index .about-index-content {
         position: absolute;
-        z-index: 902;
+        z-index: 100;
         top: 25%;
         right: 0;
         width: 100%;
@@ -192,7 +198,7 @@ html, body {
 
     .about-index .about-index-content {
         position: absolute;
-        z-index: 902;
+        z-index: 100;
         top: 4%;
         right: 0;
         width: 100%;
@@ -201,7 +207,7 @@ html, body {
     .about-index .bg-abount-index {
         width: 100%;
         background-color: rgba(0,0,0,0.7);
-        z-index: 900;
+        z-index: 99;
         position: absolute;
         left: 0;
         top: 0;
@@ -209,7 +215,7 @@ html, body {
        
     }
 
-    .about-index-content p,h2  {
+    .about-index-content p, .about-index-content h2  {
         color: #fff;
         font-size: 16pt;
     }
@@ -219,4 +225,96 @@ html, body {
     }
 }
 
+/* ====== out services ====== */
+
+.our-services-container {
+    background: url('../img/food.png');
+    background-size: contain;
+}
+
+.box-services-1 {
+    border: 1px solid #000;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+/* ====== recipes main  ====== */
+
+.recipes-main-box {
+    width: 33.333%;
+}
+
+.recipes-main-detalhes {
+    background-color: transparent;
+    color: #fac564;
+    border: 1px solid #fac564;
+    padding: 5px;
+}
+
+/* background-images */
+.recipes-main-img {
+    background: url('../img/pizza-1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.recipes-main-img-2 {
+    background: url('../img/pizza-2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.recipes-main-img-3 {
+    background: url('../img/pizza-3.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.recipes-main-img-4 {
+    background: url('../img/pizza-4.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.recipes-main-img-5 {
+    background: url('../img/pizza-5.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.recipes-main-img-6 {
+    background: url('../img/pizza-6.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+/* text */
+.text {
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+}
+
+.text .title-recipes {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .recipes-main-container {
+        flex-direction: column;
+    }
+
+    .recipes-main-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .recipes-main-img {
+        background-size: cover;
+        background-position: 100%;
+    }
+
+}
 

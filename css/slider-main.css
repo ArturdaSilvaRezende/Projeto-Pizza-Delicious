@@ -4,6 +4,7 @@
 
 #sliderContainer {
     position: relative;
+    padding-top: 80px;
 }
 
 .carousel-item img {
@@ -36,7 +37,7 @@
 .carousel-item .box-carousel h2 {
     width: 80%;
     margin: 0 auto;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .carousel-item .box-carousel h2,p {

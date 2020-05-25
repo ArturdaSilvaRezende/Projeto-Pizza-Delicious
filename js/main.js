@@ -5,17 +5,19 @@
 
 'use strict';
 
-$(document).ready(function () {
+//O bloco de código abaixo, faz o controle do show e hide do about-index
+$(document).ready(()=> {
 
-    const about_pizza_delicious = window.matchMedia("(max-width: 1023px)");
-    const aboutContainer = $("#about-index-content");
-    const aboutHall = $("#about-index");
-
+    const about_pizza_delicious = window.matchMedia("(max-width: 1024px)");
+    const aboutHall = $("#about-index");//Esta variável pega todo o container
+    const aboutContainer = $("#about-index-content");//Esta variável o conteúdo da box
+    
     abount_control_show();
+   
 
     function abount_control_show() {
 
-        aboutHall.mouseenter(function () {
+        aboutHall.mouseenter(() => {
 
             if (about_pizza_delicious.matches) {
                 aboutContainer.css('display', 'block');
@@ -25,4 +27,7 @@ $(document).ready(function () {
 
     }
 
-});
+    
+})
+
+
