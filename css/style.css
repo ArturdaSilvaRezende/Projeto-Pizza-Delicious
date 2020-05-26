@@ -274,18 +274,21 @@ html, body {
     background: url('../img/pizza-4.jpg');
     background-size: cover;
     background-position: center center;
+    padding-right: 30px;
 }
 
 .recipes-main-img-5 {
     background: url('../img/pizza-5.jpg');
     background-size: cover;
     background-position: center center;
+    padding-right: 30px;
 }
 
 .recipes-main-img-6 {
     background: url('../img/pizza-6.jpg');
     background-size: cover;
     background-position: center center;
+    padding-right: 30px; padding-right: 30px;
 }
 
 /* text */
@@ -318,3 +321,14 @@ html, body {
 
 }
 
+/* ====== our menu ====== */
+
+.our-menu-content h4 {
+    border-bottom: 1px dashed #fac564;
+}
+
+@media screen and (max-width: 767px){
+    .our-menu-mt-global {
+        margin-top: 10px;
+    }
+}
