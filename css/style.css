@@ -32,6 +32,8 @@ html, body {
 
 .active {
     color: #fac564 !important;
+    background-color: transparent !important;
+    font-weight: bold;
 }
 
 .orange-default {
@@ -46,8 +48,26 @@ html, body {
     background-color: #fac564 !important;
 }
 
+
 .navbar-toggler {
     outline: none !important;
+}
+
+.nav-link {
+    border-radius: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    bordeR: 1px solid #fac564;
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+
+.nav-link:hover {
+    color: #fff;
 }
 
 /* =========== header =========== */
@@ -76,6 +96,18 @@ html, body {
 
 .carousel-inner img {
     width: 100%;
+}
+
+@media screen and (max-width: 992px){
+    .header #navbar-main ul {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header #navbar-main ul li {
+        margin: 20px 10px 0px 0px;
+    }
 }
 
 /* =========== main content =========== */
@@ -221,7 +253,7 @@ html, body {
     }
 
     .about-index .about-index-content .abount-pizza-delicious {
-        font-size: 13pt;
+        font-size: 11.5pt;
     }
 }
 
@@ -239,6 +271,10 @@ html, body {
 }
 
 /* ====== recipes main  ====== */
+
+.recipes-main-container input[type=button]:hover {
+    border: 1px solid #fff;
+}
 
 .recipes-main-box {
     width: 33.333%;
@@ -330,5 +366,43 @@ html, body {
 @media screen and (max-width: 767px){
     .our-menu-mt-global {
         margin-top: 10px;
+    }
+}
+
+/* ====== menu-pills navegação ====== */
+
+.tipos-cardapio-container {
+    background: url('../img/bg_2.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.tipos-cardapio-container .tipos-cardapio-content {
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+}
+
+.bg-btn-active {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.bg-btn-active:hover {
+    border: 1px solid #fac564;
+    color: #fac564;
+}
+
+.img-round-cardapio {
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+
+@media screen and (max-width: 700px){
+    .nav-link {
+        font-size: 14px;
     }
 }
