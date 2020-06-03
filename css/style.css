@@ -374,6 +374,7 @@ html, body {
 .tipos-cardapio-container {
     background: url('../img/bg_2.jpg') no-repeat;
     background-size: cover;
+    background-position: center center;
     width: 100%;
 }
 
@@ -404,5 +405,35 @@ html, body {
 @media screen and (max-width: 700px){
     .nav-link {
         font-size: 14px;
+    }
+}
+
+/* ====== área de contato ====== */
+
+.area-contato {
+    overflow-x: hidden;
+}
+
+#mapContainer {
+    width: 100%;
+    height: 480px;
+}
+
+.bg-contato {
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.bg-contato:hover {
+    border: 1px solid #fac564;
+    color: #fac564;
+}
+
+@media screen and (max-width: 767px){
+    .margin-top-area-contato {
+        margin-top: 30px;
     }
 }

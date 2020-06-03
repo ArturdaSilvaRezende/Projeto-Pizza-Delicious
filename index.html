@@ -29,6 +29,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 
+    <!-- javascript api maps -->
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+
     <!-- html5shiv // respond -->
     <!--[if lt IE 9]>
         <script src="node_modules/html5shiv-master/dist/html5shiv.js"></script>
@@ -648,7 +654,7 @@
             </div><!-- our menu content -->
 
         </section><!-- our menu -->
-    
+
         <section class="mt-5 tipos-cardapio-container">
 
             <div class="tipos-cardapio-content p-4">
@@ -664,8 +670,8 @@
                             aria-controls="pills-profile" aria-selected="false">Bebidas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-hamburgueres" role="tab"
-                            aria-controls="pills-contact" aria-selected="false">Burgues</a>
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-hamburgueres"
+                            role="tab" aria-controls="pills-contact" aria-selected="false">Burgues</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-massas" role="tab"
@@ -676,22 +682,24 @@
 
                 <div class="tab-content" id="pills-tabContent">
 
-                    <div class="tab-pane fade show active" id="pills-pizza" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-pane fade show active" id="pills-pizza" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
 
                         <div class="row">
 
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pizza-1.jpg" alt="pizza-01-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pizza-1.jpg"
+                                        alt="pizza-01-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -699,15 +707,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pizza-4.jpg" alt="pizza-04-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pizza-4.jpg"
+                                        alt="pizza-04-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -715,15 +724,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pizza-5.jpg" alt="pizza-05-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pizza-5.jpg"
+                                        alt="pizza-05-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -739,15 +749,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/drink-1.jpg" alt="drink-1-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/drink-1.jpg"
+                                        alt="drink-1-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -755,15 +766,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/drink-2.jpg" alt="drink-2-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/drink-2.jpg"
+                                        alt="drink-2-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -771,15 +783,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/drink-3.jpg" alt="drink-3-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/drink-3.jpg"
+                                        alt="drink-3-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -788,22 +801,24 @@
 
                     </div>
 
-                    <div class="tab-pane fade" id="pills-hamburgueres" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="tab-pane fade" id="pills-hamburgueres" role="tabpanel"
+                        aria-labelledby="pills-contact-tab">
 
                         <div class="row">
 
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/burger-1.jpg" alt="burger-1-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/burger-1.jpg"
+                                        alt="burger-1-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -811,15 +826,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/burger-2.jpg" alt="burger-2-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/burger-2.jpg"
+                                        alt="burger-2-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -827,15 +843,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/burger-3.jpg" alt="burger-3-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/burger-3.jpg"
+                                        alt="burger-3-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -851,15 +868,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pasta-1.jpg" alt="pasta-1-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pasta-1.jpg"
+                                        alt="pasta-1-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -867,15 +885,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pasta-2.jpg" alt="pasta-2-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pasta-2.jpg"
+                                        alt="pasta-2-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -883,15 +902,16 @@
                             <div class="col-md-4">
 
                                 <div class="m-auto">
-                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pasta-3.jpg" alt="pasta-3-img">
-                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pasta-3.jpg"
+                                        alt="pasta-3-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
                                         minus saepe nemo eum. Sit, nemo amet.</p>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <p class="orange-default pl-3 pt-2">R$29,99</p>
-                                    <input class="btn ml-3 bg-btn-active" type="button"
-                                        value="Ir para o cardápio">
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
                                 </div>
 
                             </div>
@@ -906,6 +926,58 @@
 
         </section><!-- menu cardápio -->
 
+        <section class="area-contato mt-5">
+
+            <h1 class="text-center mb-5 orange-default">Nosso Endereço</h1>
+
+            <div class="p-3">
+
+                <div class="row">
+
+                    <div class="col-md-7">
+
+                        <div id="mapContainer">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-5 margin-top-area-contato">
+
+                        <h2 class="orange-default mb-4">Contate-Nos</h2>
+
+                        <form>
+
+                            <div class="row">
+
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" placeholder="Primeiro Nome">
+                                </div>
+
+                                <div class="col-md-10 mt-5">
+                                    <input type="text" class="form-control" placeholder="Último Nome">
+                                </div>
+
+                                <div class="col-md-10 mt-5">
+                                    <textarea class="form-control" name="" id="" cols="28" rows="6"
+                                        placeholder="Escreva Sua Mensagem Aqui"></textarea>
+                                    <input class="bg-contato mt-4" type="button" value="Enviar">
+                                </div>
+
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </section><!-- área contato-->
+
         <br>
         <br>
         <br>
@@ -918,6 +990,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script><!-- bootstrap.js -->
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script><!-- popper.js -->
     <script src="js/main.js"></script><!-- main.js -->
+    <script src="js/map.js"></script><!-- map.js -->
 </body>
 
 </html>
