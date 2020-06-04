@@ -437,3 +437,33 @@ html, body {
         margin-top: 30px;
     }
 }
+
+/* ====== footer ====== */
+
+.footer {
+    background-color: #212529;
+    overflow-x: hidden;
+}
+
+.serviços-footer {
+    border-bottom: 1px dashed #fac564;
+    margin-bottom: 10px;
+}
+
+.serviços-footer a {
+    color: #fff;
+}
+
+.serviços-footer a:hover {
+    color: #fac564;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+    .serviços-footer-contato {
+       margin: 20px 0;
+       padding: 30px 0;
+       border-top: 1px solid #fac564;
+       border-bottom: 1px solid #fac564;
+    }
+}

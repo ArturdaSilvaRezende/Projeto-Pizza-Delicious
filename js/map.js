@@ -37,7 +37,7 @@ var service = platform.getSearchService();
 // the callback and an error callback function (called if a
 // communication error occurs):
 service.geocode({
-    q: 'Rua x-9, Quadra 16, Lote 15, American Park, Aparecida de Goiânia, Goiás, Brazil' //Seu endereço 
+    q: '203 Fake St. Mountain View, São Francisco, Califórnia, EUA' //Seu endereço 
 }, (result) => {
     // Add a marker for each location found
     result.items.forEach((item) => {
