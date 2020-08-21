@@ -3,12 +3,6 @@
 /* =========== área do carousel =========== */
 
 #sliderContainer {
-    position: relative;
-    padding-top: 80px;
-}
-
-.carousel-item img {
-    height: 500px;
 }
 
 /* ========= slider 01 ========= */
@@ -85,22 +79,18 @@
     color: #000;
 }
 
-/* ========= slider 02 ========= */
+.carousel-item img {
+    height: 450px;
+}  
 
-.carousel-propaganda-02 .box-carousel {
-    left: 30%;
-}
+/* ========= slider 02 ========= */
 
 .carousel-propaganda-02 .slider-produto {
     position: absolute;
+    z-index: 100;
     top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);
-}
-
-.carousel-propaganda-02 .slider-produto img {
-    width: 40%;
-    height: 20%;
+    left: 14%;
+    transform: translate(-10%, -50%);
 }
 
 .carousel-propaganda-02 .box-carousel .title-slide-03 {
@@ -109,77 +99,50 @@
 
 /* ======= carousel img background ======= */
 
-@media screen and (min-width: 701px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px){
     .carousel-item img {
         height: 500px;
     }    
 }
 
-@media screen and (min-width: 400px) and (max-width: 700px){
+@media screen and (max-width: 767px){
     .carousel-item img {
-        height: 400px;
+        height: 300px;
     }    
 }
 
 /* ======= carousel content ======= */
 
-@media screen and (min-width: 992px) and (max-width: 1200px){
-    .carousel-propaganda-02 .box-carousel {
-        left: 24%;
-    }
-
-}
-
-@media screen and (min-width: 700px) and (max-width: 992px) {
-
+@media screen and (min-width: 768px) and (max-width: 1367px){
     /* propaganda 01 */
     .carousel-propaganda-01 .box-carousel {
-        width: 55%;
-    }
-
-    .carousel-propaganda-01 .box-carousel h2 {
-        font-size: 1.6em;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-     /* propaganda 02 */
-    .carousel-propaganda-02 .box-carousel {
-        left: 30%;
-        width: 50%;
-    }
-
-    .carousel-propaganda-02 .box-carousel h3 {
-        font-size: 2em;
-    }
-
-    .carousel-propaganda-02 .box-carousel h2 {
-        font-size: 1.4em;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .carousel-propaganda-02 .slider-produto {
-        right: -20%;
-    }
-
-    .carousel-propaganda-02 .slider-produto img {
-        width: 30%;
-    }
-
-}
-
-@media screen and (min-width: 300px) and (max-width: 699px) {
-
-    /* propaganda 01 */
-    .carousel-propaganda-01 .box-carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
+        height: 100%;
+    }
+
+    .carousel-propaganda-01 .box-carousel p {
+        margin-top: -60px;
+        width: 80vw;
+        font-size: 1.5em;
+    }
+
+    .carousel-propaganda-01 .box-carousel hgroup {
+        margin-top: 40px;
+        font-size: 1.6rem;
     }
 
     .carousel-propaganda-01 .box-carousel h2 {
         font-size: 1.6em;
         width: 80%;
-        margin: 0 auto;
+    }
+
+    .carousel-propaganda-01 .box-carousel h2 {
+        font-size: 1.6em;
+        width: 80%;
     }
 
     .carousel-propaganda-01 .box-carousel h3 {
@@ -187,40 +150,75 @@
     }
 
     /* propaganda 02 */
-    .carousel-propaganda-02 .box-carousel {
-        left: 34%;
-        width: 60%;
-    }
-
-    .carousel-propaganda-02 .box-carousel h3 {
-        font-size: 1.9em;
-    }
-
-    .carousel-propaganda-02 .box-carousel h2 {
-        font-size: 1.1em;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .carousel-propaganda-02 .box-carousel p {
-        font-size: 12px;
-    }
-
     .carousel-propaganda-02 .slider-produto {
-        right: -30%;
+        position: absolute;
+        z-index: 100;
+        top: 40%;
+        left: 14%;
+        transform: translate(-10%, -40%);
     }
 
     .carousel-propaganda-02 .slider-produto img {
-        width: 25%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1367px) {
+     .carousel-propaganda-02 .slider-produto {
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 14%;
+        transform: translate(-10%, -40%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+     /* propaganda 01 */
+    .carousel-propaganda-01 .box-carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
     }
 
-    .carousel-propaganda-02 .box-carousel button {
-        font-size: 12px;
+    .carousel-propaganda-01 .box-carousel p {
+        margin-top: -60px;
+        width: 80vw;
     }
 
-    /* propaganda 03 */
-    .carousel-propaganda-02 .box-carousel .title-slide-03 {
+    .carousel-propaganda-01 .box-carousel hgroup {
+        margin-top: -40px;
+        font-size: 1rem;
+    }
+
+    .carousel-propaganda-01 .box-carousel h2 {
         font-size: 1.6em;
+        width: 80%;
+    }
+
+    .carousel-propaganda-01 .box-carousel h2 {
+        font-size: 1.6em;
+        width: 80%;
+    }
+
+    .carousel-propaganda-01 .box-carousel h3 {
+        font-size: 2.6em;
+    }
+
+    /* propaganda 02 */
+    .carousel-propaganda-02 .slider-produto {
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 17%;
+        transform: translate(-10%, -50%);
+    }
+    .carousel-propaganda-02 .slider-produto img {
+        width: 80vw;
     }
 
 }

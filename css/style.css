@@ -21,6 +21,7 @@ a {
 body {
     background: url('../img/bg_4.jpg') 100% 100% no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 html, body {
@@ -99,6 +100,21 @@ html, body {
 }
 
 @media screen and (max-width: 992px){
+
+    .header {
+        position: relative;
+    }
+
+    .header .logotipo  img{
+        width: 100px;
+    }
+
+    .header #cardapio-menu {
+        position: absolute;
+        top: 25px;
+        right: 15px;
+    }
+
     .header #navbar-main ul {
         flex-wrap: wrap;
         align-items: center;
@@ -145,6 +161,9 @@ html, body {
     display: flex;
     position: relative;
     overflow-x: hidden;
+    background: url('../img/about.jpg') 100% 100%;
+    background-size: cover;
+    height: 60vh;
 }
 
 .about-index .about-index-hall img {
@@ -152,8 +171,13 @@ html, body {
 }
 
 .about-index .about-index-content {
-    width: 50%;
-    padding: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    text-align: center;
 }
 
 .about-index .about-index-content h2 {
@@ -161,36 +185,29 @@ html, body {
 }
 
 .about-index .about-index-content p {
-    text-align: justify;
+    text-align: center;
     font-size: 1.2em;
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
 }
 
-/* about index content animation */
-@keyframes abound_index_ {
-
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-
-    }
+.about-index .bg-abount-index {
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-    .about-index .about-index-content {
-        display: none;
-        animation: abound_index_ 2s;
-        -webkit-animation: abound_index_ 2s;
-        -moz-animation: abound_index_ 2s;
-        -ms-animation: abound_index_ 2s;
-        -o-animation: abound_index_ 2s;
-    }
-}
 
 @media screen and (min-width: 800px) and (max-width: 1024px){
+
+     .about-index {
+        height: 400px;
+        overflow-y: hidden;
+        text-align: center;
+    }
 
     .about-index .about-index-hall img {
       width: 100%;
@@ -209,9 +226,9 @@ html, body {
     .about-index .about-index-content {
         position: absolute;
         z-index: 100;
-        top: 25%;
-        right: 0;
-        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .about-index .about-index-content p,h2 {
@@ -222,38 +239,40 @@ html, body {
 
 }
 
-@media screen and (min-width: 400px) and (max-width: 799px) {
+@media screen and (max-width: 799px) {
 
     .about-index {
+        height: 400px;
         overflow-y: hidden;
+        text-align: center;
     }
 
     .about-index .about-index-content {
-        position: absolute;
-        z-index: 100;
-        top: 4%;
-        right: 0;
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 3;
     }
 
     .about-index .bg-abount-index {
         width: 100%;
-        background-color: rgba(0,0,0,0.7);
-        z-index: 99;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 2;
         position: absolute;
         left: 0;
         top: 0;
         height: 100%;
-       
     }
 
     .about-index-content p, .about-index-content h2  {
         color: #fff;
-        font-size: 16pt;
+        font-size: 14pt;
     }
 
     .about-index .about-index-content .abount-pizza-delicious {
-        font-size: 11.5pt;
+        font-size: 13px;
+        width: 85vw;
     }
 }
 
@@ -364,6 +383,33 @@ html, body {
 }
 
 @media screen and (max-width: 767px){
+
+    .mais-consumido-item {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+        margin: 0 auto;
+    }
+
+    .mais-consumido-item img {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    .mais-consumido-item .our-menu-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mais-consumido-item .our-menu-content p {
+        text-align: center;
+    }
+
+    .mais-consumido-item .our-menu-content div {
+        text-align: center;
+    }
+
+
     .our-menu-mt-global {
         margin-top: 10px;
     }
@@ -402,10 +448,40 @@ html, body {
     -o-border-radius: 20%;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 767px){
+
+    .tipos-cardapio-content ul {
+        display: flex;
+    }
+
+    .tipos-cardapio-content ul .nav-item {
+        text-align: center;
+    }
+
+    .tipos-cardapio-content ul .nav-item + .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .tipos-cardapio-content ul .nav-item a {
+        display: block;
+        width: 100px;
+     }
+
     .nav-link {
         font-size: 14px;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .tabpanel-content .preço-link {
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
 }
 
 /* ====== área de contato ====== */
