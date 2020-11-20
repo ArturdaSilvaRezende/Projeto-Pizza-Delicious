@@ -1,0 +1,39 @@
+{
+  "name": "Projeto-Pizza-Delicious",
+  "version": "0.0.0",
+  "description": "![portifolio-03](https://user-images.githubusercontent.com/61878023/90840479-717a5780-e330-11ea-9d00-7124a027470d.PNG)",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturdaSilvaRezende/Projeto-Pizza-Delicious.git"
+  },
+  "keywords": [],
+  "author": "Artur da Silva Rezende <arturrezende4@gmail.com> (arturrezende.com)",
+  "license": "“MIT”",
+  "bugs": {
+    "url": "https://github.com/ArturdaSilvaRezende/Projeto-Pizza-Delicious/issues"
+  },
+  "homepage": "https://github.com/ArturdaSilvaRezende/Projeto-Pizza-Delicious#readme"
+}
