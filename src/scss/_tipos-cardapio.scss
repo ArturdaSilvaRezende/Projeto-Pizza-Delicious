@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "reset";
+
+.tipos-cardapio-container {
+    background: url('../img/bg_2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+
+    .tipos-cardapio-content {
+        background-color: rgba(0,0,0,0.8);
+        width: 100%;
+    }
+
+    .bg-btn-active {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+
+        &hover {
+            border: 1px solid #fac564;
+            color: #fac564;
+        }
+    }
+
+    .img-round-cardapio {
+        @include borderRadius(20%)
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .tipos-cardapio-container {
+
+        .tipos-cardapio-content {
+
+            ul {
+                display: flex;
+            }
+            
+            .nav-item {
+                text-align: center;
+
+                a {
+                    display: block;
+                    width: 100px;
+                 }
+            }
+
+            .nav-item + .nav-item {
+                margin-bottom: 10px;
+            }
+
+            .nav-link {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .tipos-cardapio-container {
+        
+        .preço-link {
+            width: 180px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}

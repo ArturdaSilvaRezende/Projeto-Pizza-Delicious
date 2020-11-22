@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+.about-index {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    background: url('../img/about.jpg') 100% 100%;
+    background-size: cover;
+    height: 60vh;
+
+    .about-index-hall {
+        img {
+            width: 100%;
+        }
+    }
+
+    .about-index-content {
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        text-align: center;
+
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+            color: #fff;
+        }
+    }
+
+    .bg-abount-index {
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 99;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .about-index {
+        height: 400px;
+        overflow-y: hidden;
+        text-align: center;
+
+        .about-index-content {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            z-index: 3;
+
+            .abount-pizza-delicious {
+                font-size: 13px;
+                width: 85vw;
+            }
+
+            p,h2  {
+                color: #fff;
+                font-size: 14pt;
+            }
+        }
+
+        .bg-abount-index {
+            width: 100%;
+            background-color: rgba(0,0,0,0.8);
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+
+    .about-index {
+        height: 400px;
+        overflow-y: hidden;
+        text-align: center;
+
+        .about-index-content {
+            position: absolute;
+            z-index: 100;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            p,h2 {
+                color: #fff;
+                width: 100%;
+                font-size: 16pt;
+            }
+        }
+
+        .about-index-hall {
+            img {
+                width: 100%;
+            }
+        }
+
+        .bg-abount-index {
+            width: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 99;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url('../img/bg_4.jpg') 100% 100% no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* =========== classses globais  =========== */
+
+.active {
+    color: #fac564 !important;
+    background-color: transparent !important;
+    font-weight: bold;
+}
+
+.orange-default {
+    color: #fac564;
+}
+
+.bg-ordange-default {
+    background-color: #fac564;
+}
+
+.bg-active {
+    background-color: #fac564 !important;
+}
+
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.nav-link {
+    border-radius: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    bordeR: 1px solid #fac564;
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+/* =========== mixins  =========== */
+@mixin borderRadius($property) {
+    -webkit-border-radius: $property;
+    -moz-border-radius: $property;
+    -ms-border-radius: $property;
+    -o-border-radius: $property;
+}

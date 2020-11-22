@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Pizzaria Delicious</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Pizza Delicious, cardápio diferenciaod, melhores preços">
+    <meta name="description"
+        content="Pizza Delicious é o seu modelo de site número um de pizza grátis que oferece um design espetacular, saboroso, refinado e notável.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Artur">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- estilo cusmoizado -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="lib/fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+
+    <!-- html5shiv -->
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container navbar navbar-expand-lg">
+
+            <a href="index.html" class="logotipo navbar-brand">
+                <img src="img/logo.PNG" alt="logo-pizza-delicious">
+            </a><!-- logo-pizza-delicious -->
+
+            <button id="cardapio-menu" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbar-main" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars text-light"></i>
+                <span class="text-light">Cardápio</span>
+            </button><!-- btn toggle -->
+
+            <nav class="collapse navbar-collapse justify-content-end" id="navbar-main">
+                <ul class="mt-4 d-flex">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="cardapio.html" class="nav-link">Cardápio</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav><!-- menu principal -->
+
+        </div><!-- header content -->
+
+    </header><!-- header -->
+
+    <section id="sliderContainer" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <div class="bg-slider"></div>
+        <ol class="carousel-indicators">
+            <li data-target="#sliderContainer" data-slide-to="0" class="active rounded-pill p-2 bg-active"></li>
+            <li data-target="#sliderContainer" data-slide-to="1" class="rounded-pill p-2 bg-active"></li>
+            <li data-target="#sliderContainer" data-slide-to="2" class="rounded-pill p-2 bg-active"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active carousel-propaganda-01">
+                <img class="d-block w-100" src="img/bg_3.jpg" alt="First slide">
+
+                <div class="box-carousel">
+
+                    <hgroup>
+                        <h3>Bem-vindo</h3>
+                        <h2>As melhores e mais variadas receitas da região</h2>
+                    </hgroup>
+
+                    <p>Preparamos sua pizza favorita com todo amor e carinho do mundo</p>
+
+                </div>
+
+            </div><!-- silde 01 -->
+
+            <div class="carousel-item carousel-propaganda-02">
+                <img class="d-block w-100" src="img/bg_1.jpg" alt="Second slide">
+
+                <div class="slider-produto">
+                    <img src="img/bg_2.png" alt="Pizza Italyana">
+                </div>
+
+            </div><!-- slide 2-->
+
+            <div class="carousel-item carousel-propaganda-02">
+                <img class="d-block w-100" src="img/bg_1.jpg" alt="Third slide">
+
+                <div class="slider-produto">
+                    <img src="img/bg_1.png" alt="Pizza Italyana">
+                </div>
+
+            </div><!-- silde 3 -->
+
+        </div>
+
+    </section><!-- slideshow -->
+
+    <main class="mb-5">
+
+        <section class="endereco mt-3">
+
+            <div class="container">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-md-3">
+
+                        <p class="d-flex">
+                            <span class="orange-default mr-2"><i class="fas fa-phone"></i></span>
+                            <span class="text-white">000-(123)4567890</span>
+                        </p>
+
+                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur.</p>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <p class="d-flex">
+
+                            <span class="orange-default mr-2"><i class="fas fa-map-marker-alt"></i></span>
+                            <span class="text-white">198 West 21th Street</span>
+
+                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur.</p>
+
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <p class="d-flex">
+
+                            <span class="orange-default mr-2"><i class="fas fa-clock"></i></span>
+                            <span class="text-white">Aberto de Segunda a Sexta</span>
+
+                        <p class="text-muted">8:00am - 9:00pm</p>
+                        </p>
+
+                    </div>
+
+                    <div class="com-md-3 redes-sociais">
+
+                        <p class="d-flex">
+                            <span class="orange-default mr-2"><i class="fas fa-share"></i></span>
+                            <span class="redes-sociais-title text-white">Redes Sociais</span>
+                        </p>
+
+                        <div>
+                            <a href="#">
+                                <img class="bg-light mr-2" src="img/facebook.png" alt="facebook-icone">
+                            </a>
+
+                            <a href="#">
+                                <img class="mr-2" src="img/twitter.png" alt="twitter-icone">
+                            </a>
+
+                            <a href="#">
+                                <img src="img/instagram.png" alt="instagram-icone">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div><!-- container content -->
+
+        </section><!-- Address -->
+
+        <section class="about-index align-items-center" id="about-index">
+
+            <div class="bg-abount-index"></div><!-- sub background -->
+
+            <div class="about-index-content" id="about-index-content">
+
+                <h2>
+                    Bem-Vindo(a) á
+                    <span class="orange-default"><i class="fas fa-pizza-slice"> Pizza Delicious</i></span>
+                </h2>
+
+                <p class="abount-pizza-delicious">Com a proposta de oferecer sabores especiais em um ambiente moderno e
+                    aconchegante, a Piacenza oferece o tradicional rodízio de pizza, além de acompanhamentos
+                    diferenciados e opções variadas de bebidas nacionais e importadas. Hoje a casa oferece mais de 50
+                    sabores de pizzas, incluindo doces e salgadas. Faça sua reserva e descubra um cardápio cheio de
+                    opções.</p>
+
+            </div><!-- about text -->
+
+        </section><!-- about index -->
+
+        <section class="our-services-container">
+
+            <div class="container">
+
+                <div class="text-center w-75 m-auto pt-5">
+                    <h1>Nossos Serviços</h1>
+                    <p></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam non tempora animi ad quasi
+                    fugiat maxime blanditiis quas molestiae expedita vero debitis cumque.</p>
+                </div><!-- title -->
+
+                <div class="row mt-5">
+
+                    <div class="col-md-4">
+
+                        <div class="w-50 p-3 text-center box-services-1">
+                            <img class="w-100" src="img/food-and-restaurant.png" alt="comidas-saudáveis-img">
+                        </div>
+
+                        <div class="text-center">
+
+                            <h3 class="pt-3">Comidas Saudáveis</h3>
+                            <p class="pt-1 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Nihil, illo amet ea nostrum magni quam culpa soluta.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="w-50 p-3 text-center box-services-1">
+                            <img class="w-100" src="img/scooter.png" alt="entregador-img">
+                        </div>
+
+                        <div class="text-center">
+
+                            <h3 class="pt-3">Entrega Mais Rápida</h3>
+                            <p class="pt-1 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Nihil, illo amet ea nostrum magni quam culpa soluta.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="w-50 p-3 text-center box-services-1">
+                            <img class="w-100" src="img/pizza-service.png" alt="pizza-service-img">
+                        </div>
+
+                        <div class="text-center">
+
+                            <h3 class="pt-3">Receitas Originais</h3>
+                            <p class="pt-1 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Nihil, illo amet ea nostrum magni quam culpa soluta.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- our services -->
+
+        <section class="w-100">
+
+            <div class="text-center mb-5 mt-5">
+                <h2 class="text-white font-italic mb-4">Nossas Principais Receitas</h2>
+                <p class="font-italic w-75 m-auto text-white">Confira saborosas receitas de massas e recheios de pizza
+                    que vão
+                    desde os sabores tradicionais até os vegetarianos, fits e doces.</p>
+            </div><!-- title recipes main -->
+
+            <div class="d-flex recipes-main-container">
+
+                <div class="recipes-main-box">
+
+                    <div class="d-flex d-block w-100">
+
+                        <a href="#" class="recipes-main-img w-100 d-block"></a>
+
+                        <div class="text text-center text-white p-2">
+
+                            <h4>Pizza Italiana</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ea eaque molestias
+                                similique repudiandae.</p>
+
+                            <div>
+                                <span class="orange-default mr-3">R$29,90</span>
+                                <input class="recipes-main-detalhes" type="button" value="Detalhes">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="recipes-main-box">
+
+                    <div class="d-flex d-block w-100">
+
+                        <a href="#" class="recipes-main-img-2 w-100 d-block"></a>
+
+                        <div class="text text-center text-white p-2">
+
+                            <h4>Pizza Grega</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ea eaque molestias
+                                similique repudiandae.</p>
+
+                            <div>
+                                <span class="orange-default mr-3">R$29,90</span>
+                                <input class="recipes-main-detalhes" type="button" value="Detalhes">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="recipes-main-box">
+
+                    <div class="d-flex d-block w-100">
+
+                        <a href="#" class="recipes-main-img-3 w-100 d-block"></a>
+
+                        <div class="text text-center text-white p-2">
+
+                            <h4>Pizza branca</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ea eaque molestias
+                                similique repudiandae.</p>
+
+                            <div>
+                                <span class="orange-default mr-3">R$29,90</span>
+                                <input class="recipes-main-detalhes" type="button" value="Detalhes">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div><!-- recipes-main-container ROW 1 -->
+
+            <div class="d-flex recipes-main-container">
+
+                <div class="recipes-main-box">
+
+                    <div class="d-flex d-block w-100">
+
+                        <div class="text text-center text-white p-2">
+
+                            <h4 class="title-recipes">American Pizza</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ea eaque molestias
+                                similique repudiandae.</p>
+
+                            <div>
+                                <span class="orange-default mr-3">R$29,90</span>
+                                <input class="recipes-main-detalhes" type="button" value="Detalhes">
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="recipes-main-img-4 w-100 d-block"></a>
+
+                    </div>
+
+                </div>
+
+                <div class="recipes-main-box">
+
+                    <div class="d-flex d-block w-100">
+
+                        <div class="text text-center text-white p-2">
+
+                            <h4 class="title-recipes">Torta de tomate</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ea eaque molestias
+                                similique repudiandae.</p>
+
+                            <div>
+                                <span class="orange-default mr-3">R$29,90</span>
+                                <input class="recipes-main-detalhes" type="button" value="Detalhes">
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="recipes-main-img-5 w-100 d-block"></a>
+
+                    </div>
+
+                </div>
+
+                <div class="recipes-main-box">
+
+                    <div class="d-flex d-block w-100">
+
+
+                        <div class="text text-center text-white p-2">
+
+                            <h4>Margherita</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ea eaque molestias
+                                similique repudiandae.</p>
+
+                            <div>
+                                <span class="orange-default mr-3">R$29,90</span>
+                                <input class="recipes-main-detalhes" type="button" value="Detalhes">
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="recipes-main-img-6 w-100 d-block"></a>
+
+                    </div>
+
+                </div>
+
+            </div><!-- recipes-main-container ROW 2 -->
+
+        </section><!-- recipes main -->
+
+        <section class="mt-5 mb-5">
+
+            <div class="text-center">
+                <h2 class="text-white">Cardápio Mais Consumido</h2>
+                <p class="w-75 m-auto orange-default">As melhores receitas combinada com os melhores preços</p>
+            </div><!-- our menu title -->
+
+            <div class="container mt-5 our-menu-container">
+
+                <div class="row">
+
+                    <div class="col-md-6 d-flex align-items-center mais-consumido-item">
+
+                        <img class="w-25 rounded-circle" src="img/pizza-1.jpg" alt="pizza-italiana-img">
+
+                        <div class="our-menu-content pl-3 d-flex">
+
+                            <div>
+                                <h4 class="text-white">Pizza Italiana</h4>
+                                <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Tenetur
+                                    non rem fugiat.</p>
+                            </div>
+
+                            <p class="orange-default pl-3 pt-2">R$29,99</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 d-flex align-items-center our-menu-mt-global mais-consumido-item">
+
+                        <img class="w-25 rounded-circle" src="img/pizza-2.jpg" alt="pizza-grega-img">
+
+                        <div class="our-menu-content pl-3 d-flex">
+
+                            <div>
+                                <h4 class="text-white">Pizza Grega</h4>
+                                <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Tenetur
+                                    non rem fugiat.</p>
+                            </div>
+
+                            <p class="orange-default pl-3 pt-2">R$29,99</p>
+
+                        </div>
+
+                    </div>
+
+                </div><!-- row 01 -->
+
+                <div class="row mt-3">
+
+                    <div class="col-md-6 d-flex align-items-center mais-consumido-item">
+
+                        <img class="w-25 rounded-circle" src="img/pizza-menu-01.jpg" alt="pizza-calabresa-img">
+
+                        <div class="our-menu-content pl-3 d-flex">
+
+                            <div>
+                                <h4 class="text-white">Pizza Calabresa</h4>
+                                <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Tenetur
+                                    non rem fugiat.</p>
+                            </div>
+
+                            <p class="orange-default pl-3 pt-2">R$29,99</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 d-flex align-items-center our-menu-mt-global mais-consumido-item">
+
+                        <img class="w-25 rounded-circle" src="img/pizza-4.jpg" alt="pizza-americana-img">
+
+                        <div class="our-menu-content pl-3 d-flex">
+
+                            <div>
+                                <h4 class="text-white">American Pizza</h4>
+                                <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Tenetur
+                                    non rem fugiat.</p>
+                            </div>
+
+                            <p class="orange-default pl-3 pt-2">R$29,99</p>
+
+                        </div>
+
+                    </div>
+
+                </div><!-- row 02 -->
+
+                <div class="row mt-3">
+
+                    <div class="col-md-6 d-flex align-items-center mais-consumido-item">
+
+                        <img class="w-25 rounded-circle" src="img/pizza-menu-02.jpg" alt="pizza-quatro-queijos-img">
+
+                        <div class="our-menu-content pl-3 d-flex">
+
+                            <div>
+                                <h4 class="text-white">Quatro Queijos</h4>
+                                <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Tenetur
+                                    non rem fugiat.</p>
+                            </div>
+
+                            <p class="orange-default pl-3 pt-2">R$29,99</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 d-flex align-items-center our-menu-mt-global mais-consumido-item">
+
+                        <img class="w-25 rounded-circle" src="img/pizza-menu-03.jpg" alt="pizza-quatro-portuguesa-img">
+
+                        <div class="our-menu-content pl-3 d-flex">
+
+                            <div>
+                                <h4 class="text-white">Portuguesa</h4>
+                                <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Tenetur
+                                    non rem fugiat.</p>
+                            </div>
+
+                            <p class="orange-default pl-3 pt-2">R$29,99</p>
+
+                        </div>
+
+                    </div>
+
+                </div><!-- row 03 -->
+
+                <div class="row mt-3">
+
+                    <div class="col-md-6 d-flex align-items-center mais-consumido-item">
+
+                        <img class="w-25 rounded-circle" src="img/pizza-menu-04.jpg" alt="pizza-atum-img">
+
+                        <div class="our-menu-content pl-3 d-flex">
+
+                            <div>
+                                <h4 class="text-white">Atum</h4>
+                                <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Tenetur
+                                    non rem fugiat.</p>
+                            </div>
+
+                            <p class="orange-default pl-3 pt-2">R$29,99</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 d-flex align-items-center our-menu-mt-global mais-consumido-item">
+
+                        <img class="w-25 rounded-circle" src="img/pizza-menu-05.jpg" alt="pizza-frutos-do-mar-img">
+
+                        <div class="our-menu-content pl-3 d-flex">
+
+                            <div>
+                                <h4 class="text-white">Frutos do Mar</h4>
+                                <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Tenetur
+                                    non rem fugiat.</p>
+                            </div>
+
+                            <p class="orange-default pl-3 pt-2">R$29,99</p>
+
+                        </div>
+
+                    </div>
+
+                </div><!-- row 04 -->
+
+            </div><!-- our menu content -->
+
+        </section><!-- our menu -->
+
+        <section class="mt-5 tipos-cardapio-container">
+
+            <div class="tipos-cardapio-content p-4">
+
+                <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-pizza" role="tab"
+                            aria-controls="pills-home" aria-selected="true">Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-bebidas" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">Bebidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-hamburgueres"
+                            role="tab" aria-controls="pills-contact" aria-selected="false">Burgues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-massas" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">Massas</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+
+                    <div class="tab-pane fade show active" id="pills-pizza" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+
+                        <div class="row">
+
+                            <div class="col-md-4 tabpanel-content">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pizza-1.jpg"
+                                        alt="pizza-01-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4 preço-link">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 tabpanel-content">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pizza-4.jpg"
+                                        alt="pizza-04-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4 preço-link">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 tabpanel-content">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pizza-5.jpg"
+                                        alt="pizza-05-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4 preço-link">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-bebidas" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/drink-1.jpg"
+                                        alt="drink-1-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/drink-2.jpg"
+                                        alt="drink-2-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/drink-3.jpg"
+                                        alt="drink-3-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-hamburgueres" role="tabpanel"
+                        aria-labelledby="pills-contact-tab">
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/burger-1.jpg"
+                                        alt="burger-1-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/burger-2.jpg"
+                                        alt="burger-2-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/burger-3.jpg"
+                                        alt="burger-3-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-massas" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pasta-1.jpg"
+                                        alt="pasta-1-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pasta-2.jpg"
+                                        alt="pasta-2-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="m-auto">
+                                    <img class="w-50 d-block m-auto pt-3 pb-3 img-round-cardapio" src="img/pasta-3.jpg"
+                                        alt="pasta-3-img">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Error
+                                        minus saepe nemo eum. Sit, nemo amet.</p>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <p class="orange-default pl-3 pt-2">R$29,99</p>
+                                    <input class="btn ml-3 bg-btn-active" type="button" value="Ir para o cardápio">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- menu -->
+
+    </main><!-- main content -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row pt-4 pb-5">
+
+                <div class="col-md-4">
+
+                    <div class="text-center">
+                        <h2 class="orange-default mb-4">Sobre Nós</h2>
+                        <p class="text-justify text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Illo iste
+                            earum sint obcaecati
+                            facere. Aspernatur perferendis exercitationem autem omnis maiores eaque deleniti beatae.
+                        </p>
+
+                        <nav>
+
+                            <ul class="d-flex justify-content-center mt-4">
+
+                                <li>
+                                    <a class="bg-white d-block mr-3 img-thumbnail" href="#">
+                                        <img src="img/facebook.png" alt="facebook-img-footer">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="bg-white d-block img-thumbnail" href="#">
+                                        <img src="img/twitter.png" alt="twitter-img-footer">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="bg-white d-block ml-3 img-thumbnail" href="#">
+                                        <img src="img/instagram.png" alt="instagram-img-footer">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </nav><!-- redes sociais -->
+
+                    </div>
+
+                </div><!-- sobre nós -->
+
+                <div class="col-md-4 serviços-footer-contato">
+
+                    <div class="text-center">
+
+                        <h2 class="orange-default mb-4">Serviços</h2>
+
+                        <nav>
+                            <ul>
+                                <li class="serviços-footer"><a href="#">Cardápio</a></li>
+                                <li class="serviços-footer"><a href="#">Entrega</a></li>
+                                <li class="serviços-footer"><a href="#">Promoções</a></li>
+                                <li class="serviços-footer"><a href="#">Nosso App</a></li>
+                            </ul>
+                        </nav><!-- serviços itens -->
+
+                    </div>
+
+                </div><!-- serviços -->
+
+                <div class="col-md-4">
+
+                    <div class="text-center">
+
+                        <h2 class="orange-default mb-4">Entre em Contato</h2>
+
+                        <p class="text-white text-left">
+                            <img src="img/address.png" alt="andress-img-footer">
+                            203 Fake St. Mountain View, São Francisco, Califórnia, EUA
+                        </p>
+
+                        <p class="text-white text-left">
+                            <img src="img/telephone.png" alt="telephone-img-footer">
+                            +2 392 3929 210
+                        </p>
+
+                        <p class="text-white text-left">
+                            <img src="img/email.png" alt="email-img-footer">
+                            <a class="text-white" href="#">info@seudominio.com</a>
+                        </p>
+
+
+                    </div>
+
+                </div><!-- contato área -->
+
+            </div>
+
+            <h6 class="text-white text-center pb-4">Copyright © 2020 Todos os direitos reservados | Este modelo é
+                feito compor Colorlib</h6>
+
+        </div>
+
+
+    </footer><!-- footer -->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/popper.js/dist/umd/popper.min.js"></script>
+    <script src="js/app.min.js"></script><!-- main.js -->
+</body>
+
+</html>

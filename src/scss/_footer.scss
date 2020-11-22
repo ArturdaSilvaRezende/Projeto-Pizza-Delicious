@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.footer {
+    background-color: #212529;
+    overflow-x: hidden;
+
+    .serviços-footer {
+        border-bottom: 1px dashed #fac564;
+        margin-bottom: 10px;
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #fac564;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer {
+
+        .serviços-footer-contato {
+            margin: 20px 0;
+            padding: 20px 0;  
+        }
+    }
+}

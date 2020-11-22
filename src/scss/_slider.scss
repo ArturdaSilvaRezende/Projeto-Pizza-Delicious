@@ -1,0 +1,196 @@
+@charset "utf-8";
+@import "reset";
+
+#sliderContainer {
+
+    .carousel-inner {
+
+        .carousel-item {
+
+            img {
+                height: 450px;
+            }
+    
+            .box-carousel {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(170, 106, 106, 0.6);    
+                width: 40%;
+                padding: 10px;
+                text-align: center;
+                @include borderRadius(10px);
+    
+                h2 {
+                    width: 80%;
+                    margin: 0 auto;
+                    font-size: 14pt;
+                }
+    
+                h3 {
+                    font-family: 'Great Vibes', cursive;
+                    font-size: 4em;
+                }
+    
+                p {
+                    color: #fff;
+                } 
+            }
+        }
+
+        .carousel-propaganda-02 {
+
+            .slider-produto {
+                position: absolute;
+                z-index: 100;
+                top: 50%;
+                left: 14%;
+                transform: translate(-10%, -50%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    #sliderContainer {
+        position: relative;
+
+        .bg-slider {
+            z-index: 998;
+            width: 100%;
+            height: 300px;
+            background-color: rgba(0,0,0,0.1);  
+            position: absolute; 
+            top: 0;
+            left: 0;  
+        }
+        .carousel-inner {
+
+            .carousel-item {
+
+                img {
+                    height: 300px;
+                }
+
+                .box-carousel {
+                    background-color: transparent;    
+                    width: 100%;
+                    top: 40%;
+                } 
+            }
+
+            .carousel-propaganda-02 {
+
+                .slider-produto {
+                    position: absolute;
+                    z-index: 100;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);  
+                }
+            }
+        }
+    }
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #sliderContainer {
+        position: relative;
+ 
+        .bg-slider {
+            z-index: 998;
+            width: 100%;
+            height: 500px;
+            background-color: rgba(0,0,0,0.2);    
+            position: absolute; 
+            top: 0;
+            left: 0; 
+        }
+        .carousel-inner {
+
+            .carousel-item {
+
+                img {
+                    height: 500px;
+                }
+
+                .box-carousel {
+                    background-color: transparent;    
+                    width: 100%;
+                    top: 40%; 
+                } 
+            } 
+
+            .carousel-propaganda-02 {
+
+                .slider-produto {
+                    position: absolute;
+                    z-index: 100;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%); 
+
+                    img {
+                        width: 100%; 
+                    }
+                }
+            }
+        }
+    }   
+}
+ 
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    #sliderContainer {
+        position: relative;
+ 
+        .bg-slider {
+           display: none;
+        }
+        .carousel-inner {
+
+            .carousel-item {
+
+                img {
+                    height: 500px;
+                }
+
+                .box-carousel {
+                    background-color:rgba(0,0,0,0.6);       
+                    width: 100%;
+                    top: 50%;
+                    padding: 20px;
+                    
+                    h2 {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 1.5em;
+                    }
+        
+                    p {
+                        font-size: 1.3em;  
+                    }
+                }  
+            } 
+
+            .carousel-propaganda-02 {
+
+                .slider-produto {
+                    position: absolute;
+                    z-index: 100;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%); 
+
+                    img {
+                        width: 100%; 
+                    }
+                }
+            }
+        }
+    }   
+}
+
+  

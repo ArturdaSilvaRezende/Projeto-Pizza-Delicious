@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.recipes-main-container {
+
+    @mixin main-img($name) {
+        background: url('../img/#{$name}.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    input[type=button] {
+
+        &:hover {
+            border: 1px solid #fff;
+        }
+    }
+
+    
+    .recipes-main-box {
+        width: 33.333%;
+
+        .recipes-main-detalhes {
+            background-color: transparent;
+            color: #fac564;
+            border: 1px solid #fac564;
+            padding: 5px;
+        }
+
+        .recipes-main-img {
+            @include main-img("pizza-1");
+        }
+
+        .recipes-main-img-2 {
+            @include main-img("pizza-2");
+        }
+
+        .recipes-main-img-3 {
+            @include main-img("pizza-3");
+        }
+
+        .recipes-main-img-4 {
+            @include main-img("pizza-4");
+            padding-right: 30px;
+        }
+
+        .recipes-main-img-5 {
+            @include main-img("pizza-5");
+            padding-right: 30px;
+        }
+        
+        .recipes-main-img-6 {
+            @include main-img("pizza-6");
+            padding-right: 30px; padding-right: 30px;
+        }
+
+        .text {
+            background: rgba(0, 0, 0, 0.2);
+            position: relative;
+            width: 100%;
+            font-size: 14px;
+
+            .title-recipes {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .recipes-main-container {
+
+        flex-direction: column;
+
+        .recipes-main-box {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .recipes-main-img {
+            background-size: cover;
+            background-position: 100%;
+        }
+        
+    }
+}

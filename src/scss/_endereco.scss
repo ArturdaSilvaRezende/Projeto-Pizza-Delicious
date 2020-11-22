@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@media screen and (max-width: 767px) {
+    .endereco {
+        
+        margin: 10% 0 10% 0 !important; 
+
+        .redes-sociais {
+            background-color: #fac564;
+            width: 100%;
+            padding: 10px 0 10px 20px;
+
+            .redes-sociais-title {
+                color: #000 !important;
+                font-weight: bold;
+                position: relative;
+                left: -30px; 
+            }
+        }
+    }
+}

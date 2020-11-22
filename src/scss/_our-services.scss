@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "reset";
+
+.our-services-container {
+    background: url('../img/food.png');
+    background-size: contain;
+}
+
+.box-services-1 {
+    border: 1px solid #000;
+    background-color: transparent;
+    margin: 0 auto;
+    @include borderRadius(10px);
+}
