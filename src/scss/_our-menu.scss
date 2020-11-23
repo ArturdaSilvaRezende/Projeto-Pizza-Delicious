@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.our-menu-container {
+
+    .our-menu-content {
+
+        h4 {
+            border-bottom: 1px dashed #fac564;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .our-menu-container {
+
+        .mais-consumido-item {
+            display: flex;
+            flex-direction: column;
+            width: 75vw;
+            margin: 0 auto;
+
+            img {
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+
+            .our-menu-content {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    text-align: center;
+                }
+
+                div {
+                    text-align: center;
+                }
+            }
+
+            .our-menu-mt-global {
+                margin-top: 10px;
+            }
+        }
+    }
+}
