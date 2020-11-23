@@ -8,6 +8,9 @@ const imagemin = require("gulp-imagemin");
 const uglify = require("gulp-uglify");
 const babel = require("gulp-babel");
 const browsersync = require("browser-sync").create();
+const usemin = require("gulp-usemin");
+const purgecss = require("gulp-purgecss");
+const include = require("gulp-file-include");
 
 //task server
 function server() {
@@ -24,7 +27,21 @@ function server() {
 
 //task html
 function html() {
-  return gulp.src("./src/**/*.html").pipe(gulp.dest("./dist"));
+  return gulp
+    .src(["./src/**/*.html"])
+    .pipe(include())
+    .pipe(
+      usemin({
+        css: [
+          function () {
+            return purgecss({
+              content: ["./src/**/*.html"],
+            });
+          },
+        ],
+      })
+    )
+    .pipe(gulp.dest("./dist"));
 }
 
 //task sass
@@ -95,6 +112,13 @@ function images() {
     .pipe(gulp.dest("./dist/img"));
 }
 
+//font awesome
+function fonteAwesome() {
+  return gulp
+    .src("./src/lib/fortawesome/fontawesome-free/**/*.*")
+    .pipe(gulp.dest("./dist/lib/fortawesome/fontawesome-free"));
+}
+
 //Estrutura de produção e desenvolvimento
 let isProd = false;
 
@@ -120,5 +144,5 @@ module.exports.build = gulp.series(
   clear,
   clearApp,
   prod,
-  gulp.parallel(html, js, sass, images)
+  gulp.parallel(html, js, sass, images, fonteAwesome)
 );
